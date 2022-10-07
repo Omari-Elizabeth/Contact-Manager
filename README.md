@@ -1,3 +1,17 @@
+# Contact Manager App
+# An App to carefully store manage your contact
+​
+## Table of Content
+​
++ [Description](#description)
++ [Acknowledgements](#acknowledgements)
++ [Access](#access)
++ [Technology Used](#technology-used)
++ [Licence](#licence)
++ [Authors Info](#author-Info)
+​
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
