@@ -12,7 +12,14 @@ function NewContact() {
   // const [updatedContact, setupdatedContact]=useState({...ContactList})
   // console.log(name, phone)
 
-
+  fetch("https://contact-list-server-app.herokuapp.com/Contacts", {
+    method: "POST",
+    headers: {
+      'content-type': "application/json"
+    },
+    body: JSON.stringify(newContact)
+  })
+  
 
   return (
     <form id="form">
