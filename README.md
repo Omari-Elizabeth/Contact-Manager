@@ -10,6 +10,19 @@
 + [Licence](#licence)
 + [Authors Info](#author-Info)
 ​
+## Description
+<p>In this app, you can easily and carefully store and manage all your contacts</p>
+​
+## Acknowledgements
+ - [Grace Muthui](https://www.linkedin.com/in/grace-muthui-ab881313a/)
+ - [Kevin Isom](https://www.linkedin.com/in/grace-muthui-ab881313a/)
+​
+### Requirements
+​
+* Either a computer,phone,tablet or an Ipad
+​
+* An access to the Internet
+​
 
 
 # Getting Started with Create React App
