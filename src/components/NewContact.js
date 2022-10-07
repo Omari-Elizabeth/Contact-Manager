@@ -31,7 +31,16 @@ function NewContact() {
     body: JSON.stringify(newContact)
   })
   
+  alert(`${name}'s has been created successfully!!`)
 
+  setName("")
+  setPhone("")
+  setEmail("")
+  setCompany("")
+  setLocation("")
+  setDescription("")
+
+ }
   return (
     <form id="form">
       <input type="text" name="name" placeholder='Name' value={name} onChange={e => setName(e.target.value)}/><br/>
