@@ -4,7 +4,6 @@ import ContactList from './ContactList'
 import '../App.css'
 
 function Search() {
-
   const [contacts, setContacts] = useState([])
   const [search, setSearch] = useState("")
 
@@ -13,25 +12,6 @@ function Search() {
     .then(res => res.json())
     .then(data =>setContacts(data))
   }, [])
-
-  function handleSearch(e) {
-    setSearch(e.target.value)
-  }
-
-  const newContactList = contacts.filter((contact) => {
-    if (search === "") {
-      return contact
-    } else {
-      return contact.name.toLowerCase().includes(search)    
-    }
-  })
-
-  function handleDelete(contactId) {
-    fetch(`https://contact-list-server-app.herokuapp.com/Contacts/${contactId}`, {
-      method: "DELETE"
-    })
-  }
-
 
   return (
     <div>
