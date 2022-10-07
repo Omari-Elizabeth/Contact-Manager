@@ -7,6 +7,7 @@ function Navbar({contacts}) {
     <nav className='nav'>
         <Link className='nav-links' to='/home'>Home</Link>
         <Link className='nav-links' to='/newContact'>New</Link>
+        <Link className='nav-links' to='/search'>Search</Link>
     </nav>
   )
 }

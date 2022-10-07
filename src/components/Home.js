@@ -14,9 +14,18 @@ function Home() {
   }, [])
   
 
+  function handleDelete(contactId) {
+    fetch(`https://contact-list-server-app.herokuapp.com/Contacts/${contactId}`, {
+      method: "DELETE"
+    })
+    const newContactList = contacts.filter(contact => contact.id !== contactId)
+    setContacts(newContactList)
+  }
+
+
   return (
     <div className='cards'>
-        {contacts && contacts.map((contact) => <ContactList key={contact.id} contact={contact}/>)}
+        {contacts && contacts.map((contact) => <ContactList key={contact.id} contact={contact} handleDelete={handleDelete}/>)}
     </div>
   )
 }

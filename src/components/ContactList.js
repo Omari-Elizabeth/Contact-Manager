@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
-function ContactList({contact}) {
+function ContactList({contact, handleDelete}) {
   
   return (
       <div className='contact-card' key={contact.id}>
@@ -14,11 +14,12 @@ function ContactList({contact}) {
         </label>
       </div>
       <div className='contact-buttons'>
-        <i className="material-icons">delete</i>
+        <i className="material-icons" onClick={(e) => handleDelete(contact.id)}>delete</i>
         <Link className='nav-links' to='/viewContact'>
           <i className="material-icons">edit</i>
         </Link>
       </div>
+      <Outlet/>
       </div>
   )
 }

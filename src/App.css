@@ -4,7 +4,8 @@
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  margin: 20px;
 }
 
 .nav-links {
@@ -12,7 +13,7 @@
   margin: 1rem .5rem;
   text-decoration: none;
   padding: 1rem;
-  border: 1px solid #ff8500;
+  /* border: 1px solid #ff8500; */
   color: rgb(23, 22, 22);
   transition: all .2s ease-in-out;
 }
@@ -27,7 +28,7 @@
 .search {
   display: flex;
   justify-content: center;
-  margin: 1rem 0;
+  margin-left: 1rem 0;
 }
 
 #searchInput {

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './components/App';
 import Home from './components/Home';
 import NewContact from './components/NewContact';
+import Search from './components/Search';
 import './index.css';
 // import reportWebVitals from './reportWebVitals';
 
@@ -15,7 +16,7 @@ root.render(
         <Route path='/' element={<App/>}>
         <Route path="/home" element={<Home/>}/>
         <Route path="newContact" element={<NewContact/>}/>
-        <Route path="/ViewContact" element={<viewContact/>}/>
+        <Route path="/search" element={<Search/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
