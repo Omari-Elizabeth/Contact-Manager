@@ -5,7 +5,7 @@ import App from './components/App';
 import Home from './components/Home';
 import NewContact from './components/NewContact';
 import Search from './components/Search';
-import ViewContact from './components/ViewContact'
+// import ViewContact from './components/ViewContact'
 import './index.css';
 // import reportWebVitals from './reportWebVitals';
 
@@ -18,7 +18,7 @@ root.render(
         <Route path="/home" element={<Home/>}/>
         <Route path="newContact" element={<NewContact/>}/>
         <Route path="/search" element={<Search/>}/>
-        <Route path="/viewContact" element={<ViewContact/>}/>
+        {/* <Route path="/viewContact" element={<ViewContact/>}/> */}
         </Route>
       </Routes>
     </BrowserRouter>
