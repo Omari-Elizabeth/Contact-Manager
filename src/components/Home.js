@@ -22,7 +22,6 @@ function Home() {
     setContacts(newContactList)
   }
 
-
   return (
     <div className='cards'>
         {contacts && contacts.map((contact) => <ContactList key={contact.id} contact={contact} handleDelete={handleDelete}/>)}
