@@ -9,14 +9,17 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-  <Routes>
-    <Route path='/' element={<App/>}>
-      <Route path="/home" element={<Home/>}/>
-      <Route path="/newContact" element={<NewContact/>}/>
-    </Route>
-  </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<App/>}>
+        <Route path="/home" element={<Home/>}/>
+        <Route path="newContact" element={<NewContact/>}/>
+        <Route path="/ViewContact" element={<viewContact/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

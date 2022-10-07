@@ -5,7 +5,7 @@ import Search from './Search';
 
 
 function App() {
-  
+
   return (
     <div className="app">
       <Navbar/>

@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function ContactList({contact}) {
+  
   return (
       <div className='contact-card' key={contact.id}>
       <div className="contact-info">
@@ -13,7 +15,9 @@ function ContactList({contact}) {
       </div>
       <div className='contact-buttons'>
         <i className="material-icons">delete</i>
-        <i className="material-icons">edit</i>
+        <Link className='nav-links' to='/viewContact'>
+          <i className="material-icons">edit</i>
+        </Link>
       </div>
       </div>
   )
