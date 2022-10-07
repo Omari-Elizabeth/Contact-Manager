@@ -12,7 +12,23 @@ function Search() {
     .then(res => res.json())
     .then(data =>setContacts(data))
   }, [])
+  function handleSearch(e) {
+    setSearch(e.target.value)
+  }
 
+  const newContactList = contacts.filter((contact) => {
+    if (search === "") {
+      return contact
+    } else {
+      return contact.name.toLowerCase().includes(search)    
+    }
+  })
+
+  function handleDelete(contactId) {
+    fetch(`https://contact-list-server-app.herokuapp.com/Contacts/${contactId}`, {
+      method: "DELETE"
+    })
+  }
   return (
     <div>
       <div className='search'>
