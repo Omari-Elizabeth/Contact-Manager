@@ -11,7 +11,18 @@ function NewContact() {
   const [description, setDescription] = useState("")
   // const [updatedContact, setupdatedContact]=useState({...ContactList})
   // console.log(name, phone)
+  function handleSubmit(e){
 
+    e.preventDefault()
+
+    const newContact = {
+      name: name,
+      phone: phone,
+      email: email,
+      company: company,
+      location: location,
+      description: description
+    };
   fetch("https://contact-list-server-app.herokuapp.com/Contacts", {
     method: "POST",
     headers: {
