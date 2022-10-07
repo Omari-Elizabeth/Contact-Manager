@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import ContactList from './ContactList';
 
 function NewContact() {
+  const [name, setName] = useState("")
+  const [phone, setPhone] = useState("")
+  const [email, setEmail] = useState("")
+  const [company, setCompany] = useState("")
+  const [location, setLocation] = useState("")
+  const [description, setDescription] = useState("")
+  // const [updatedContact, setupdatedContact]=useState({...ContactList})
+  // console.log(name, phone)
 
 
 
