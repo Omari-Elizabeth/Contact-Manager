@@ -39,7 +39,7 @@ function NewContact() {
   setCompany("")
   setLocation("")
   setDescription("")
-
+  
  }
   return (
     <form id="form">
