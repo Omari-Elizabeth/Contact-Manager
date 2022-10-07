@@ -23,7 +23,16 @@
 ​
 * An access to the Internet
 ​
-
+## Technology Used
+* HTML - this was the markup language used to build the structure of the page.
+​
+* CSS - this was used to style the page 
+​
+* Javascript - this was used to add functionality  
+​
+[Go Back to the top](#Tasty Tables Delight)
+[Go Back to the top](#Tasty_Tables_Delight)
+​
 
 # Getting Started with Create React App
 
